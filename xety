@@ -1,0 +1,34 @@
+import itertools as t
+import os
+import sys
+
+os.system("clear")
+os.system("figlet -f lean xety | lolcat")
+print("by CL4W")
+chars=raw_input("chars here ")
+n1=int(raw_input("starting length here "))
+n2=int(raw_input("ending length here "))
+f=raw_input("file to save you can let it blanck ")
+if f=="" or f is None:
+        if n1==n2:
+                for l in t.product(chars,repeat=n1):
+                        s=''.join(l)
+                        print s
+        elif n2>n1:
+            for i in range(n1,n2+1):
+                for l in t.product(chars,repeat=i):
+                    s=''.join(l)
+                    print s
+        else:
+            print "starting length is not greater than ending length "
+else:
+        with open(f,"w") as file:                                                                if n1==n2:
+                        for l in t.product(chars,repeat=n1):                                                     s=''.join(l)
+                                file.write(s+"\n")
+                elif n2>n1:
+                    for i in range(n1,n2+1):
+                        for l in t.product(chars,repeat=i):
+                            s=''.join(l)
+                            file.write(s+"\n")
+                else:
+                    print "starting length is not greater than ending length "  >
